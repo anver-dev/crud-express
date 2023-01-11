@@ -1,6 +1,6 @@
 export const USERS_BBDD =[
     {
-      "_id": "63295fe591279e127c6c9ec5",
+      "_id": "1",
       "index": 0,
       "guid": "81b605fe-206a-4767-aee0-1597cd91509b",
       "isActive": true,
