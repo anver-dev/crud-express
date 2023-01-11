@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema Altas, Bajas y Cambios</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Sistema de Altas, Bajas y Cambios</h2>
+    </div>
+
+    <p>Seleccione la opción que desea realizar a continuación</p>
+    <input type="text" id="id_user" name="fname" /><br /><br />
+    <a href="altas.html">
+      <input type="submit" value="Altas" />
+    </a>
+    <input type="submit" value="Bajas" />
+    <input type="submit" value="Cambios" />
+  </body>
+</html>
+<script>
+  fetch("http://localhost:3000/account/63295fe591279e127c6c9ec5", {
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    }
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+</script>
